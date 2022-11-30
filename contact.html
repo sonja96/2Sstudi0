@@ -1,0 +1,422 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact </title>
+    <style>
+
+
+        .nav{
+      display : flex;
+      justify-content: space-between;
+      background-color: white;
+      padding: 0 1rem;
+    }
+    .logo a{
+      color:black;
+      text-decoration: none;
+    font-size:18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    }
+
+   
+    .nav ul{
+      display : flex;
+      list-style-type: none;
+    }
+    .nav ul li{
+      margin: 0 10px;
+      padding: 0 10 px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .nav ul li a{
+      text-decoration: none;
+      color: rgb(29, 27, 89);
+      font-size: 18px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .nav ul li :hover{
+      color: black;;
+    }
+        html, body {
+        margin: 2% 2%;
+        
+    }
+
+img {
+  border-radius: 50%;
+}
+
+body {
+    background-color: white;
+
+   }
+
+   .location{
+    font-size: 30px;
+    color: rgb(29, 27, 89);
+    margin: 5% 2%;
+    padding-left: 8%;
+   }
+
+   .tirana1{
+    font-size: 26px;
+    font: rgb(29, 27, 89);
+    padding-left: 8%;
+
+   }
+
+   .p1{
+    font-size: 20px;
+    
+   }
+
+   .p{
+    font-size: 20px;
+    color: #a7a7a7;
+   }
+
+
+   .contact{
+    color: rgb(29, 27, 89);
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 1%;
+    text-align: left;
+  
+   }
+
+   .question{
+    color: #a7a7a7;
+    font-size: 20px;
+    padding-left: 1%;
+    
+   }
+
+   .copyright{
+  text-align: center;
+
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 23px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-instagram {
+  background: rgb(29, 27, 89);
+  color: white;
+ 
+}
+.fa-twitter{
+  background: rgb(29, 27, 89);
+  color: white;
+ 
+}
+
+.fa-facebook{
+  background: rgb(29, 27, 89);
+  color: white;
+}
+
+.footer{
+  text-align: center
+}
+
+
+.column {
+
+width: 50%;
+margin-left: 25%;
+font-size: 40px;
+color: rgb(29, 27, 89);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.tirana{
+width: 50%;
+  margin-left: 25%;
+font-size: 20px;
+color: #a7a7a7;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+/* CONTACT PAGE */
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    height: 465px;
+    margin: 50px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+        0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.contact-form:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+form {
+    padding: 25px 20px;
+}
+
+input {
+    width: 240px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(16, 62, 109, 0.4);
+}
+
+input:first-child {
+    margin: 15px 15px 15px 0;
+}
+
+textarea {
+    width: 500px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(16, 62, 109, 0.4);
+}
+
+address {
+    padding: 20px;
+    width: 260px;
+    background-color: #103F6D;
+    color: #fff;
+    line-height: 50px;
+}
+
+form h2 {
+    font-size: 18px;
+}
+
+address p {
+    line-height: 35px;
+}
+
+.form-submit button {
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding: 8px 15px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.form-submit button:hover {
+    background: #103F6D;
+}
+
+form ion-icon {
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+address ion-icon {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.social-icons ion-icon {
+    margin: 5px 10px;
+}
+
+
+button {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px 22px;
+    font-size: 16px;
+    margin: 18px 0;
+}
+
+button:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, rgb(50, 12, 20), rgb(100, 27, 19));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </style>
+      <link href=
+      "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            rel="stylesheet" integrity=
+      "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+      
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity=
+      "sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+        </script>
+      
+        <script src=
+      "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity=
+      "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous">
+        </script>
+      </head>
+      
+      <body>
+        <!-- NAVBAR STARTING -->
+        <!-- Use navbar class to the navbar logo
+          to the far left of the screen-->
+        <nav class=" navbar navbar-expand-lg
+          navbar-light bg-white fixed-top py-lg-0 ">
+      
+          <a class="navbar-brand" href="#">
+      
+            
+            <img src="images/studio.png" alt="Logo" width="200" >
+            
+          </a>
+      
+          <button class="navbar-toggler" type="button"
+              data-toggle="collapse"
+              data-target="#navbarResponsive"
+              aria-controls="navbarResponsive"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+      
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse"
+              id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portofolio.html">Portofolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        
+      <div class="nav">
+       <div class="logo">
+       
+       
+ 
+         <link rel="stylesheet" href="css/styles.css">
+        
+         
+       </div>
+      </div>
+    
+    </div>
+    
+  </head>
+  
+
+  <body>
+
+
+
+  </br>
+</br>
+</br>
+</br>
+
+
+   
+  <div class="container contact-page">
+
+    <section class="contact-form">
+      <form action="">
+        <h2>
+          <ion-icon name="mail"></ion-icon>
+          Write to us:
+        </h2>
+        <div class="input-1">
+          <input type="text" placeholder="Your name *" required>
+          <input type="email" placeholder="Your email *" required>
+        </div>
+        <div class="input-2">
+          <input type="number" placeholder="Your phone">
+        
+        </div>
+        <div class="form-submit">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Your message *" required></textarea>
+          <button type="submit">Send</button>
+    
+        </div>
+      </form>
+
+      <address>
+        <h2>Contact Information</h2>
+        <p>
+          <ion-icon name="pin"></ion-icon> Location -Tirana Albania
+          <br><ion-icon name="call"></ion-icon> +355 69 39 12 000
+          <br><ion-icon name="mail"></ion-icon> sonjisdesign@gmail.com
+        </p>
+        <hr>
+      
+        <footer class="footer">
+
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <a href="https://www.instagram.com/sonjasubashi/" class="fa fa-instagram"></a>
+        <a href="" class="fa fa-twitter"></a>
+        <a href="" class="fa fa-facebook"></a> 
+        
+        </footer>
+
+
+  </br>
+</br>
+</br>
+</br>
+
+
+  </body>

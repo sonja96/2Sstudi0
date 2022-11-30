@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+      <title>2SSTUDIO</title>
+    </head>
+    <body>
+    
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+  </html>
+
+
+
+<link rel="stylesheet" href="css/styles.css">
+
+
+<style>
+
+.nav{
+      display : flex;
+      justify-content: space-between;
+      background-color: white;
+      padding: 0 1rem;
+    }
+  
+    .nav ul{
+      display : flex;
+      list-style-type: none;
+    }
+    .nav ul li{
+      margin: 0 10px;
+      padding: 0 10 px;
+    }
+    .nav ul li a{
+      text-decoration: none;
+      color: rgb(29, 27, 89);
+      font-size: 18px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .nav ul li :hover{
+      color: #a7a7a7;
+    }
+
+html, body {
+        margin: 2% 2%;
+        
+    }
+
+    
+    
+    .footer{
+  text-align: center;
+  
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-instagram {
+  background: rgb(29, 27, 89);
+  color: white;
+ 
+}
+.fa-twitter{
+  background: rgb(29, 27, 89);
+  color: white;
+ 
+}
+
+.fa-facebook{
+  background: rgb(29, 27, 89);
+  color: white;
+ 
+}
+.nav{
+    
+      height:80px;
+      
+    }
+
+    .portofolio{
+        font-size: 35px;
+        padding-left: 1%;
+        color:rgb(29, 27, 89)
+    }
+ 
+
+    .img77{
+        margin: 30px;
+        padding-left: 7%;
+       
+       
+    }
+
+
+
+    div#carousel { 
+  perspective: 1200px; 
+  background: rgb(241, 245, 248); 
+  padding-top: 0%; 
+  font-size:0; 
+  margin-bottom: 3rem; 
+  overflow: hidden; 
+}
+figure#spinner { 
+  transform-style: preserve-3d; 
+  height: 300px; 
+  transform-origin: 50% 50% -500px; 
+  transition: 1s; 
+} 
+figure#spinner img { 
+  width: 40%; max-width: 425px; 
+  position: absolute; left: 30%;
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent; 
+}
+figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+}
+figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+div#carousel ~ span { 
+  color: #fff; 
+  margin: 5%; 
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 2rem; 
+  transition: 0.6s color; 
+  position: relative; 
+  margin-top: -6rem; 
+  border-bottom: none; 
+  line-height: 0; }
+
+
+    .brand{
+      color: rgb(29, 27, 89);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-align: center;
+    }
+
+
+
+/* Built on ideas from https://codepen.io/Schepp/pen/WNbQByE */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.carousel * {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
+}
+.carousel *::-webkit-scrollbar {
+  width: 0;
+}
+.carousel *::-webkit-scrollbar-track {
+  background: transparent;
+}
+.carousel *::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+.carousel * {
+  -ms-overflow-style: none;
+}
+.carousel {
+  --slide: 0;
+  position: relative;
+  width: 100%;
+  height: 360px;
+  text-align: center;
+  color: #fff;
+}
+.carousel .carousel-inner {
+  --slides: 0;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel .carousel-inner {
+    scroll-behavior: auto;
+  }
+}
+.carousel a {
+  position: relative;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: rgba(120, 120, 120, 0.3);
+  border: 1px solid #fff;
+  top: 280px;
+  z-index: 2;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+  transition: transform ease 0.3s;
+}
+.carousel a:focus {
+  background: #abecd2;
+}
+.carousel-caption {
+ 
+  position: absolute;
+  padding: 20px;
+  text-shadow: 0 1px 2px rgb(0 0 0 / 60%);
+  top: 20%;
+  width: 80%;
+  left: 10%;
+}
+.carousel .item {
+  --slide: 0;
+  flex: 0 0 100%;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  scroll-snap-align: center;
+  background-size: cover;
+}
+.carousel .item:after {
+  content: "";
+  line-height: 0;
+  display: inline-block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #03d07f;
+  top: 284px;
+  --slideLeft: calc(var(--slide) * 15px);
+  --slidesCorrect: calc((var(--slides) * 7.85px) + 10.5px);
+  transform: translate(calc(var(--slideLeft) - var(--slidesCorrect)));
+  left: 50%;
+  opacity: 0;
+  z-index: 11;
+  transition: opacity 0s ease 0s;
+}
+.carousel .item:target:after {
+  opacity: 1;
+}
+.carousel:focus-within .item:target:after {
+  transition: opacity 0.3s ease 0.8s;
+}
+@media screen and (max-width: 800px) {
+  .carousel a,
+  .carousel .item:after {
+    display: none;
+  }
+}
+
+
+
+
+
+</style>
+
+</head>
+
+
+  <body>
+    
+    <!-- NAVBAR STARTING -->
+    <!-- Use navbar class to the navbar logo
+      to the far left of the screen-->
+    <nav class=" navbar navbar-expand-lg
+      navbar-light bg-white fixed-top py-lg-0 ">
+  
+      <a class="navbar-brand" href="#">
+  
+        
+        <img src="images/studio.png" alt="Logo" width="200" >
+        
+      </a>
+  
+      <button class="navbar-toggler" type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+  
+          <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse"
+          id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home </a>
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portofolio.html">Portofolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+  <div class="nav">
+   <div class="logo">
+  
+   </div>
+   
+   </div>
+  </div>
+
+
+  <div class="carousel">
+    <a title="View Slide 1" href="#slide1" style="--slide:1;"></a>
+    <a title="View Slide 2" href="#slide2" style="--slide:2;"></a>
+    <a title="View Slide 3" href="#slide3" style="--slide:3;"></a>
+    <a title="View Slide 4" href="#slide4" style="--slide:4;"></a>
+    <a title="View Slide 5" href="#slide5" style="--slide:5;"></a>
+    <a title="View Slide 6" href="#slide6" style="--slide:6;"></a>
+    <a title="View Slide 7" href="#slide7" style="--slide:7;"></a>
+    <a title="View Slide 8" href="#slide8" style="--slide:8;"></a>
+    <div class="carousel-inner" style="--slides:8;">
+      <div id="slide1" class="item" style="background-image: url('images/lots.png');--slide:1;">
+        <div class="carousel-caption">
+        
+      
+        </div>
+      </div>
+      <div id="slide2" class="item" style="background-image: url('images/lotss.png');--slide:2;">
+        <div class="carousel-caption">
+          
+          
+        </div>
+      </div>
+      <div id="slide3" class="item" style="background-image: url('images/lots2.png');--slide:3;">
+        <div class="carousel-caption">
+       
+       
+        </div>
+      </div>
+      <div id="slide4" class="item" style="background-image: url('images/lots3.png');--slide:4;">
+        <div class="carousel-caption">
+        
+        </div>
+      </div>
+      <div id="slide5" class="item" style="background-image: url('images/lots3.png');--slide:5;">
+        <div class="carousel-caption">
+        
+        </div>
+      </div>
+      <div id="slide6" class="item" style="background-image: url('images/we1.png');--slide:6;">
+        <div class="carousel-caption">
+         
+         
+        </div>
+      </div>
+      
+      <div id="slide7" class="item" style="background-image: url('images/yje.png');--slide:7;">
+        <div class="carousel-caption">
+          <h1 class="ready">Are You Ready To Transform Your Brand?</h1>
+        
+        </div>
+      </div>
+      <div id="slide8" class="item" style="background-image: url('images/yje.png');--slide:8;">
+        <div class="carousel-caption">
+          <h1 class="ready">We are happy to help you.</h1>
+         
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+<h1 class="brand">Social Media Marketing </h1> 
+
+</br>
+</br>
+</br>
+</br>
+
+
+
+  
+  <div id="carousel" >
+    <figure id="spinner">
+      <img src="images/p5.png" alt>
+      <img src="images/p8.png" alt>
+      <img src="images/LOGOO.png" alt>
+      <img src="images/logooo.png" alt>
+      <img src="images/of3.png" alt>
+      <img src="images/off1.png" alt>
+      <img src="images/p4.png" alt>
+      <img src="images/P6.png" alt>
+    </figure>
+  </div>
+
+
+
+
+
+
+
+
+
+ 
+<footer class="footer">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<a href="https://www.instagram.com/sonjasubashi/" class="fa fa-instagram"></a>
+<a href="" class="fa fa-twitter"></a>
+<a href="" class="fa fa-facebook"></a>
+
+
+  <hr>
+   <p class="copyright"> © Copyright 2S Studio</p>
+</footer>
+
+    
+</body>
+</html>
+
